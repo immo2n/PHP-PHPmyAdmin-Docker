@@ -1,0 +1,39 @@
+services:
+  php:
+    build: 
+      context: .
+    image: php:8.2-apache
+    container_name: PHP-Server
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8081:80
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=app_db
+  
+  mysql:
+    image: mysql:8.0
+    container_name: MySQL-Database
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=app_db
+    volumes:
+      - mysql-data:/var/lib/mysql
+  
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: PHPmyAdmin-UI
+    ports:
+      - 8082:80
+    environment:
+      - PMA_HOST=mysql
+      - MYSQL_PASSWORD=root
+  
+volumes:
+  mysql-data:
