@@ -48,6 +48,11 @@ A lightweight and ready-to-go PHP development environment powered by Docker. No 
    docker compose up --build
    ```
 
+   - Or run in background
+   ```bash
+   docker compose up -d
+   ```
+
 3. **Open in your browser:**
 
    - PHP App: [http://localhost:8081](http://localhost:8081)
