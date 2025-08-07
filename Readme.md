@@ -54,8 +54,8 @@ A lightweight and ready-to-go PHP development environment powered by Docker. No 
 
 3. **Open in your browser:**
 
-   - PHP App: [http://localhost:8081](http://localhost:7000)
-   - phpMyAdmin: [http://localhost:8082](http://localhost:7001)
+   - PHP App: [http://localhost:7000](http://localhost:7000)
+   - phpMyAdmin: [http://localhost:7001](http://localhost:7001)
      - Server: `mysql`
      - Username: `root`
      - Password: `root`
