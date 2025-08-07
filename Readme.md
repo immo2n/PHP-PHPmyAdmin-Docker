@@ -47,7 +47,6 @@ A lightweight and ready-to-go PHP development environment powered by Docker. No 
    ```bash
    docker compose up --build
    ```
-
    - Or run in background
    ```bash
    docker compose up -d
