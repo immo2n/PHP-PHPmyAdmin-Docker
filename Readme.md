@@ -39,7 +39,7 @@ A lightweight and ready-to-go PHP development environment powered by Docker. No 
 
    ```bash
    git clone https://github.com/immo2n/PHP-PHPmyAdmin-Docker.git
-   cd php-mysql-docker-setup
+   cd PHP-PHPmyAdmin-Docker
    ```
 
 2. **Run the stack:**
