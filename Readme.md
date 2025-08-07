@@ -38,7 +38,7 @@ A lightweight and ready-to-go PHP development environment powered by Docker. No 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/php-mysql-docker-setup.git
+   git clone https://github.com/immo2n/PHP-PHPmyAdmin-Docker.git
    cd php-mysql-docker-setup
    ```
 
